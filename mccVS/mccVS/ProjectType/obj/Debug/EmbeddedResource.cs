@@ -154,7 +154,7 @@ namespace ProjectType {
 						Microsoft.Build.Framework.XamlTypes.Rule t = ((Microsoft.Build.Framework.XamlTypes.Rule)(ruleEnumerator.Current));
 						if (System.StringComparer.OrdinalIgnoreCase.Equals(t.Name, SchemaName)) {
 							unboundRule = t;
-							unboundRule.Name = "271549c5-e239-430d-8f31-e726766566a4";
+							unboundRule.Name = "fe443e3d-c062-4920-8e22-d0f6247834d0";
 							EmbeddedResource.deserializedFallbackRule = unboundRule;
 						}
 					}

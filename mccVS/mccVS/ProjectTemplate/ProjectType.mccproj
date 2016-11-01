@@ -1,41 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
-      <CustomProjectExtensionsPath>$(LocalAppData)\CustomProjectSystems\ProjectType\</CustomProjectExtensionsPath>
+    <CustomProjectExtensionsPath>$(LocalAppData)\CustomProjectSystems\mccVS\</CustomProjectExtensionsPath>
   </PropertyGroup>
-  
-  <Import Project="$(CustomProjectExtensionsPath)CustomProject.Default.props" />
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" Label="Configuration">
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'" Label="Configuration">
+  <PropertyGroup>
+    <x-distance>1</x-distance>
+    <z-distance>0</z-distance>
   </PropertyGroup>
 
-  <Import Project="$(CustomProjectExtensionsPath)CustomProject.props" />
-    
+  <Import Project="$(CustomProjectExtensionsPath)CustomProject.Default.props" Condition="Exists('$(CustomProjectExtensionsPath)CustomProject.Default.props')"/>
+  <Import Project="$(CustomProjectExtensionsPath)CustomProjectCs.targets" Condition="Exists('$(CustomProjectExtensionsPath)CustomProjectCs.targets')"/>
+  <Import Project="$(CustomProjectExtensionsPath)CustomProject.props" Condition="Exists('$(CustomProjectExtensionsPath)CustomProject.props')"/>
+
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="mscorlib" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Program.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <mccCompile Include="Function.mcc">
+      <Build>true</Build>
+    </mccCompile>
+    <None Include="**/*.txt"/>
+    <mccBuild Include="@(mccCompile)" Condition="'%(Build)'==true" />"
   </ItemGroup>
 
-  <Import Project="$(CustomProjectExtensionsPath)CustomProjectCs.targets" />
+  <Target Name="Build">
+    <Exec Command="$(CustomProjectExtensionsPath)Resources\mccBuild.exe @(mccBuild)"/>
+  </Target>
 
   <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
   <ProjectExtensions>
@@ -43,4 +34,5 @@
       <ProjectConfigurationsDeclaredAsItems />
     </ProjectCapabilities>
   </ProjectExtensions>
+
 </Project>

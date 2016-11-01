@@ -200,7 +200,7 @@ namespace ProjectType {
 						Microsoft.Build.Framework.XamlTypes.Rule t = ((Microsoft.Build.Framework.XamlTypes.Rule)(ruleEnumerator.Current));
 						if (System.StringComparer.OrdinalIgnoreCase.Equals(t.Name, SchemaName)) {
 							unboundRule = t;
-							unboundRule.Name = "8da7acba-0bb3-4f6b-8c16-7a909adc80e8";
+							unboundRule.Name = "c1602d37-2970-430c-8f5c-0f6706d33480";
 							Folder.deserializedFallbackRule = unboundRule;
 						}
 					}

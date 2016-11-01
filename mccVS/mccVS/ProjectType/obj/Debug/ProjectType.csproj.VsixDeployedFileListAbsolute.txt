@@ -1,0 +1,5 @@
+C:\Users\Leo\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\ProjectType.ProjectType\One-Command VSIX\1.0\\ProjectType.dll
+C:\Users\Leo\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\ProjectType.ProjectType\One-Command VSIX\1.0\\ProjectType.pkgdef
+C:\Users\Leo\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\ProjectType.ProjectType\One-Command VSIX\1.0\\extension.vsixmanifest
+C:\Users\Leo\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\ProjectType.ProjectType\One-Command VSIX\1.0\\ProjectType.ico
+C:\Users\Leo\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\ProjectType.ProjectType\One-Command VSIX\1.0\\ProjectType.pdb

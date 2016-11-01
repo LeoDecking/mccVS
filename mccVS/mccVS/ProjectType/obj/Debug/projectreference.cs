@@ -315,7 +315,7 @@ namespace ProjectType {
 						Microsoft.Build.Framework.XamlTypes.Rule t = ((Microsoft.Build.Framework.XamlTypes.Rule)(ruleEnumerator.Current));
 						if (System.StringComparer.OrdinalIgnoreCase.Equals(t.Name, SchemaName)) {
 							unboundRule = t;
-							unboundRule.Name = "ca347e48-b3cd-4eaa-a561-b4e6323d2532";
+							unboundRule.Name = "006a86bd-8070-4b2a-bba4-66183b0d3b67";
 							ProjectReference.deserializedFallbackRule = unboundRule;
 						}
 					}

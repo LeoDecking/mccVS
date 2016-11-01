@@ -43,9 +43,9 @@ namespace ProjectType
         /// <remarks>
         /// This value should be kept in sync with the capability as actually defined in your .targets.
         /// </remarks>
-        internal const string UniqueCapability = "ProjectType";
+        internal const string UniqueCapability = "mcc";
 
-        internal const string Language = "ProjectType";
+        internal const string Language = "mcc";
 
         [ImportingConstructor]
         public MyUnconfiguredProject(UnconfiguredProject unconfiguredProject)

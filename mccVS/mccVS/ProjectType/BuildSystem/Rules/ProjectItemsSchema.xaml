@@ -32,6 +32,18 @@
         DisplayName="C# file"
         ItemType="Compile">
     </ContentType>
+    
+
+    <ContentType
+	    Name="mccSourceFile" 
+	    DisplayName="mcc source file" 
+	    ItemType="mccCompile">
+    </ContentType>
+
+    <ItemType Name="mccCompile" DisplayName="mcc source file"/>
+
+    <FileExtension Name=".mcc" ContentType="mccSourceFile" />
+    
 
     <ItemType Name="Compile" DisplayName="C# compiler"/>
     <ItemType Name="EmbeddedResource" DisplayName="Embedded Resource"/>

@@ -1,0 +1,10 @@
+C:\Users\Leo\Source\Repos\mccVS\mccVS\mccVS\ProjectTemplate\bin\Debug\ProjectTemplates\mcc\1033\ProjectType.zip
+C:\Users\Leo\Source\Repos\mccVS\mccVS\mccVS\ProjectTemplate\obj\Debug\ProjectTemplate.csprojResolveAssemblyReference.cache
+C:\Users\Leo\Source\Repos\mccVS\mccVS\mccVS\ProjectTemplate\obj\Debug\mcc\1033\ProjectType.zip
+C:\Users\Leo\Source\Repos\mccVS\mccVS\mccVS\ProjectTemplate\obj\Debug\ProjectType.dll
+C:\Users\Leo\Source\Repos\mccVS\mccVS\mccVS\ProjectTemplate\obj\Debug\ProjectType.pdb
+E:\Users\Leo\Source\Repos\mccVS\mccVS\mccVS\ProjectTemplate\bin\Debug\ProjectTemplates\mcc\1033\ProjectType.zip
+E:\Users\Leo\Source\Repos\mccVS\mccVS\mccVS\ProjectTemplate\obj\Debug\ProjectTemplate.csprojResolveAssemblyReference.cache
+E:\Users\Leo\Source\Repos\mccVS\mccVS\mccVS\ProjectTemplate\obj\Debug\mcc\1033\ProjectType.zip
+E:\Users\Leo\Source\Repos\mccVS\mccVS\mccVS\ProjectTemplate\obj\Debug\ProjectType.dll
+E:\Users\Leo\Source\Repos\mccVS\mccVS\mccVS\ProjectTemplate\obj\Debug\ProjectType.pdb

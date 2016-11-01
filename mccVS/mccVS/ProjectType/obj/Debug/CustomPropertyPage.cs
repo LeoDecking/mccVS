@@ -177,7 +177,7 @@ namespace ProjectType {
 						Microsoft.Build.Framework.XamlTypes.Rule t = ((Microsoft.Build.Framework.XamlTypes.Rule)(ruleEnumerator.Current));
 						if (System.StringComparer.OrdinalIgnoreCase.Equals(t.Name, SchemaName)) {
 							unboundRule = t;
-							unboundRule.Name = "0e4229b9-ccb1-42b2-b8d9-5efa59f40562";
+							unboundRule.Name = "f5c1fdb8-816a-440f-8cfd-d2a89a66232d";
 							MyCustomPropertyPage.deserializedFallbackRule = unboundRule;
 						}
 					}

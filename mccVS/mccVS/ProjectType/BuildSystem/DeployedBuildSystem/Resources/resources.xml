@@ -1,0 +1,105 @@
+<Resources>
+  <command>
+    <achievement doc="Gives a player an achievement or increases a statistic." img="blocks\command_block_front.png" >
+      <arg1 name="&lt;give|take>" doc="">
+        <p1 name="give" doc=""/>
+        <p2 name="take" doc=""/>
+      </arg1>
+      <arg2 name="&lt;name|*>" doc="Specifies which achievement to modify.">
+        <p1 name="|achievement|"/>
+      </arg2>
+      <arg3 name="[player]" doc="Must be a player name or a target selector. If not specified, defaults to the command's executor. Not optional in command blocks.">
+        <p1 name="@p" doc="Targets the nearest player. If there are multiple nearest players, caused by them being precisely the same distance away, the player who most recently joined the server is selected."/>
+        <p2 name="@r" doc="Targets a random player (or entity with the type target selector argument)."/>
+        <p3 name="@a" doc="Targets all players, including dead players. No other selector will find dead players."/>
+        <p4 name="@e" doc="Targets all entities (including players)."/>
+      </arg3>
+    </achievement>
+    <ban doc="Adds a player to the blacklist." img="blocks\command_block_front.png">
+      <arg1 name="&lt;name>" doc="The name of the player to be banned. Does not need to be online, or even real."/>
+      <arg2 name="[reason ...]" doc="Text to be displayed with the ban, to other operators and in the server logs."/>
+    </ban>
+    <ban-ip doc="Adds an IP address to the blacklist." img="blocks\command_block_front.png">
+      <arg1 name="&lt;address|name>" doc="An IP address or the name of a player who is currently online"/>
+      <arg2 name="[reason ...]" doc="Text to be displayed with the ban, to other operators and in the server logs."/>
+    </ban-ip>
+    <banlist doc="Displays the server's blacklist." img="blocks\command_block_front.png">
+      <arg1 name="&lt;ips|players>" doc=""/>
+    </banlist>
+    <blockdata doc="Modifies the data tag of a block">
+      <arg1 name="&lt;x>" doc="Specifies the coordinates of the block to be modified. May be provided in tilde notation to identify a position relative to the command's execution."/>
+      <arg2 name="&lt;y>" doc="Specifies the coordinates of the block to be modified. May be provided in tilde notation to identify a position relative to the command's execution."/>
+      <arg3 name="&lt;z>" doc="Specifies the coordinates of the block to be modified. May be provided in tilde notation to identify a position relative to the command's execution."/>
+      <arg4 name="&lt;dataTag>" doc="Specifies the data tag elements to be added to, or overwrite elements of, the specified block. Must be a compound NBT tag."/>
+    </blockdata>
+    
+    
+    <execute doc="Executes a command on behalf of one or more other entities, with originating permissions." img="blocks\command_block_front.png">
+      <arg1 name="&lt;entity>" doc="Specifies the target to be the command's executor. Must be a player name or target selector. If more than one entity is selected, the command will be run once as each of them.">
+        <p1 name="@p" doc="Targets the nearest player. If there are multiple nearest players, caused by them being precisely the same distance away, the player who most recently joined the server is selected."/>
+        <p2 name="@r" doc="Targets a random player (or entity with the type target selector argument)."/>
+        <p3 name="@a" doc="Targets all players, including dead players. No other selector will find dead players."/>
+        <p4 name="@e" doc="Targets all entities (including players)."/>
+      </arg1>
+      <arg2 name="&lt;x>" doc=""/>
+      <arg3 name="&lt;y>" doc=""/>
+      <arg4 name="&lt;z>" doc=""/>
+      <arg5 name="&lt;detect|command ...>" doc="on condition that a single-block /testforblock-style check passes.
+      Specifies the command to be run. Must be a valid command.">
+        <p1 name="detect" doc=""/>
+        <p2 name="|command|"/>
+      </arg5>
+      <arg6 name="&lt;x2>" needs="4-detect" doc="Specifies the position of the block to check. Must be within the range -30,000,000 to 30,000,000 (inclusive). May use tilde notation to specify distances relative to x."/>
+      <arg7 name="&lt;y2>" needs="4-detect" doc="Specifies the position of the block to check. May use tilde notation to specify distances relative to y."/>
+      <arg8 name="&lt;z2>" needs="4-detect" doc="Specifies the position of the block to check. Must be within the range -30,000,000 to 30,000,000 (inclusive). May use tilde notation to specify distances relative to z."/>
+      <arg9 name="&lt;block>" needs="4-detect" doc="Specifies the block id and data which the block at (x2,y2,z2) must match for the command to run. block must be a valid block id.">
+        <p1 name="|block|"/>
+      </arg9>
+      <arg10 name="&lt;data>" needs="4-detect" doc="Must be a valid block data for that type of block or -1 to match any block data."/>      
+      <arg11 name="&lt;command ...>" needs="4-detect" doc="Specifies the command to be run. Must be a valid command.">
+        <p1 name="|command|"/>
+      </arg11>
+    </execute>
+  </command>
+  <achievement>
+    <p1 name="*" doc="represents all achievements"/>
+    <p2 name="achievement.acquireIron" doc="Acquire Hardware - Smelt an iron ingot" img="items\iron_ingot.png"/>
+    <p3 name="achievement.bakeCake" doc="The Lie - Wheat, sugar, milk, and eggs" img="items\cake.png"/>
+    <p4 name="achievement.blazeRod" doc="Into Fire - Relieve a Blaze of its rod" img="items\blaze_rod.png"/>
+    <p5 name="achievement.bookcase" doc="Librarian - Build some bookshelves to improve your enchantment table" img="blocks\bookshelf.png"/>
+    <p6 name="achievement.breedCow" doc="Repopulation - Breed two cows with wheat" img="items\wheat.png"/>
+    <p7 name="achievement.buildBetterPickaxe" doc="Getting an Upgrade - Construct a better pickaxe" img="items\stone_pickaxe.png"/>
+    <p8 name="achievement.buildFurnace" doc="Hot Topic - Construct a furnace out of eight cobblestone blocks" img="blocks\furnace_front_off.png"/>
+    <p9 name="achievement.buildHoe" doc="Time to Farm! - Use planks and sticks to make a hoe" img="items\wood_hoe.png"/>
+    <p10 name="achievement.buildPickaxe" doc="Time to Mine! - Use planks and sticks to make a pickaxe" img="items\wood_pickaxe.png"/>
+    <p11 name="achievement.buildSword" doc="Time to Strike! - Use planks and sticks to make a sword" img="items\wood_sword.png"/>
+    <p12 name="achievement.buildWorkBench" doc="Benchmarking - Craft a workbench with four blocks of planks" img="blocks\crafting_table_front.png"/>
+    <p13 name="achievement.cookFish" doc="Delicious Fish - Catch and cook a fish!" img="items\fish_cod_cooked.png"/>
+    <p14 name="achievement.diamonds" doc="DIAMONDS! - Acquire diamonds with your iron tools" img="blocks\diamond_ore.png"/>
+    <p15 name="achievement.diamondsToYou" doc="Diamonds to you! - Throw diamonds at another player" img="items\diamond.png"/>
+    <p16 name="achievement.enchantments" doc="Enchanter - Use a book, obsidian and diamonds to construct an enchantment table" img="blocks\enchanting_table_side.png"/>
+    <p17 name="achievement.exploreAllBiomes" doc="Adventuring Time - Discover all biomes" img="items\diamond_boots.png"/>
+    <p18 name="achievement.flyPig" doc="When Pigs Fly - Fly a pig off a cliff" img="items\saddle.png"/>
+    <p19 name="achievement.fullBeacon" doc="Beaconator - Create a full beacon" img="blocks\beacon.png"/>
+    <p20 name="achievement.ghast" doc="Return to Sender - Destroy a Ghast with a fireball" img="items\ghast_tear.png"/>
+    <p21 name="achievement.killCow" doc="Cow Tipper - Harvest some leather" img="items\leather.png"/>
+    <p22 name="achievement.killEnemy" doc="Monster Hunter - Attack and destroy a monster" img="items\bone.png"/>
+    <p23 name="achievement.killWither" doc="The Beginning. - Kill the Wither" img="items\nether_star.png"/>
+    <p24 name="achievement.makeBread" doc="Bake Bread - Turn wheat into bread" img="items\bread.png"/>
+    <p25 name="achievement.mineWood" doc="Getting Wood - Attack a tree until a block of wood pops out" img="blocks\log_oak.png"/>
+    <p26 name="achievement.onARail" doc="On A Rail - Travel by minecart at least 1 km from where you started" img="blocks\rail_normal.png"/>
+    <p27 name="achievement.openInventory" doc="Taking Inventory - Press \'E\' to open your inventory" img="items\book_normal.png"/>
+    <p28 name="achievement.overkill" doc="Overkill - Deal nine hearts of damage in a single hit" img="items\diamond_sword.png"/>
+    <p29 name="achievement.overpowered" doc="Overpowered - Eat a Notch apple" img="items\apple_golden.png"/>
+    <p30 name="achievement.portal" doc="We Need to Go Deeper - Build a portal to the Nether" img="blocks\obsidian.png"/>
+    <p31 name="achievement.potion" doc="Local Brewery - Brew a potion" img="items\potion_bottle_drinkable.png"/>
+    <p32 name="achievement.snipeSkeleton" doc="Sniper Duel - Kill a skeleton with an arrow from more than 50 meters" img="items\bow_standby.png"/>
+    <p33 name="achievement.spawnWither" doc="The Beginning? - Spawn the Wither"/>
+    <p34 name="achievement.theEnd" doc="The End? - Locate the End" img="items\ender_eye.png"/>
+    <p35 name="achievement.theEnd2" doc="The End. - Defeat the Ender Dragon" img="items\ender_pearl.png"/>
+  </achievement>
+  <block>
+    <p1 name="minecraft:air" doc="Air is the block present in otherwise empty space." id="0"/>
+    <p2 name="minecraft:stone" doc="Stone is a block found in abundance in the Overworld." img="blocks\stone.png" id="1"/>
+  </block>
+</Resources>
